@@ -1,5 +1,11 @@
 Haz lo siguiente:
 R//
+create BIGFILE TABLESPACE big_tbs DATAFILE
+'C:\oraclexe\app\oracle\oradata\big_tbs_Victor.dbf' size 500M,
+'C:\oraclexe\app\oracle\oradata\big_tbs_andres.dbf' size 500M,
+EXTENT MANAGEMENT LOCAL
+ONLINE;
+
 
 CREATE TABLESPACE quiz DATAFILE
 'C:\oraclexe\app\oracle\oradata\quiz_1.dbf' size 200M,
